@@ -174,9 +174,9 @@ class TwentyOne extends React.Component {
         <button type="button" onClick={this.handleRememberMe}>
         Remember me
         </button></>)}
-        {name && rememberMe && (<p>Welcome, {name}!</p>)}
+        {name && rememberMe && (<div>Welcome, {name}!</div>)}
         
-        <p>Wallet: ${wallet}</p>
+        <div>Wallet: ${wallet}</div>
         
         {gameStarted && (
         <>
@@ -201,9 +201,9 @@ class TwentyOne extends React.Component {
             </ul>
             {gameOver && (
                 <>
-                    <p>Game Over. Result: {result}</p>
+                    <div>Game Over. Result: {result}</div>
                     <button onClick={() => this.resetGame()}>Restart Game</button>
-                    <p>Rate: ${this.state.initialRate}</p>
+                    <div>Rate: ${this.state.initialRate}</div>
           <button onClick={() => this.upRate()}>Up rate</button>
           <button onClick={() => this.downRate()}>Down rate</button>
                 </>
@@ -212,13 +212,13 @@ class TwentyOne extends React.Component {
         </>
         )} 
         {!gameStarted && !gameOver && (
-        <p>
+        <div>
           
           <button onClick={this.startGame}>Start Game</button>
-          <p>Rate: ${this.state.initialRate}</p>
+          <div>Rate: ${this.state.initialRate}</div>
           <button onClick={() => this.upRate()}>Up rate</button>
           <button onClick={() => this.downRate()}>Down rate</button>
-        </p>
+        </div>
         )}
     </div>
     );

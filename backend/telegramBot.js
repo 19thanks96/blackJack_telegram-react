@@ -4,12 +4,13 @@ const { message } = require('telegraf/filters');
 const gameController = require('./gameController');
 const gameState = require('./gameState')
 const gameLogic = require('./gameLogic')
-const{resetRate} = require('./api')
+const {resetRate} = require('./api')
+require('dotenv').config()
 
 let balance;
 const app = express()
 const port = 4000
-const bot = new Telegraf("6298128552:AAH4Ju-bg6SRl6JyGPMcg41mqas-DG3RBdI");
+const bot = new Telegraf(process.env.key);
 let user;
 
 bot.start(async (ctx) => {
