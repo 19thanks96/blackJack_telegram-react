@@ -5,13 +5,18 @@ It uses decks of 52 cards and descends from a global family of casino banking ga
 ## Live Demo
 
 ### Registration and start game
-![start.gif](./gifs/start.gif)
+![Registration](./gifs/start.gif)
 
 ### Changing rates
-![rates.gif](./gifs/rates.gif)
+![Changing rates](./gifs/rates.gif)
 ### Raising stakes and multiplying the minimum bet with a zero balance
-![uprate.gif](./gifs/uprate.gif)
+![Raising stakes](./gifs/uprate.gif)
 
+### Telegram bets
+![Telegram bets](./gifs/tgStart.gif)
+
+### Telegram start game
+![Telegram start game](./gifs/tgGame.gif)
 ## How to start
 
 Clone the project
@@ -50,18 +55,15 @@ To create your bot you need registration at BotFather
 cd backend
 
 touch .env
-
 ```
 
 Example of .env file:
 ```
-export key = 'yourkey'
-
+export key = 'yourTelegramBotKeyAtBotFather'
 ```
 Next step:
 
 ```
-
 npm install
 
 npm run bot
