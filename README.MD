@@ -70,7 +70,7 @@ npm run bot
 ```
 You will see logs in `log.txt`
 
-Link bot:
+### You can try my telegram bot at link:
 ```
 https://t.me/BlackJackWithBetsBot
 ```
